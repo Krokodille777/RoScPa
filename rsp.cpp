@@ -45,5 +45,12 @@ int main(){
     }
 
     std::cout << "Game Over! Final score: " << user_score << " : " << comp_score << std::endl;
+    if (user_score > comp_score){
+        std::cout << "You win!" << std::endl;
+    } else if (user_score < comp_score){
+        std::cout << "You lose!" << std::endl;
+    } else {
+        std::cout << "Draw!" << std::endl;
+    }
     return 0;
 }
