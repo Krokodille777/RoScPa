@@ -13,7 +13,7 @@ int main(){
     while (times < 10){
         std::cout<<"Enter Rock, Scissors or Paper: ";
         std::cin>>user_rsp;
-        std::transform(user_rsp.begin(), user_rsp.end(), user_rsp.begin(), ::tolower);
+        std::transform(user_rsp.begin(), user_rsp.end(), user_rsp.begin(), ::tolower); // convert to lower case
 
         
         int comp_choice = dis(gen);
